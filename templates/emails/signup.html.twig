@@ -1,0 +1,10 @@
+<h1>Witaj {{ user.name }}!</h1>
+
+<p>
+    Zarejestrowałeś konto w naszym systemie, podając poniższy adres e-mail:
+</p>
+<p><code>{{ email.to[0].address }}</code></p>
+
+<p>
+Twoje konto jest obecnie nieaktywne. Aby dokończyć proces rejestracji i aktywacji <a href="{{ path('confirm_registration', {'hash': user.hashCode}) }}">klinknij tutaj</a>
+</p>

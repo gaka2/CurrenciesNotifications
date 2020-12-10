@@ -1,0 +1,12 @@
+<h1>Witaj {{ user.name }}!</h1>
+
+<p>
+Nastąpiła zmiana kursu waluty.
+
+Kod waluty: {{ currency.code }}
+Kurs waluty: {{ currency.exchangeRate }}
+</p>
+
+<p>
+Aby zrezygnować z powiadomień <a href="{{ path('unsubscribe', {'hash': user.hashCode}) }}">klinknij tutaj</a>
+</p>
